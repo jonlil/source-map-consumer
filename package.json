@@ -1,10 +1,19 @@
 {
-  "dependencies": {
-    "body-parser": "^1.14.1",
-    "express": "^4.13.3",
-    "jade": "^1.11.0",
-    "q": "^1.4.1",
-    "request": "^2.64.0",
-    "source-map": "^0.5.0"
-  }
+    "author": [
+        "Jonas Liljestrand <jonas.liljestrand@gmail.com>"
+    ],
+    "dependencies": {
+        "body-parser": "^1.14.1",
+        "express": "^4.13.3",
+        "jade": "^1.11.0",
+        "q": "^1.4.1",
+        "request": "^2.64.0",
+        "source-map": "^0.5.0"
+    },
+    "name": "sourcemap-consumer",
+    "version": "0.0.0",
+    "description": "http web interface for consuming source-maps and getting originalPosition for line and column",
+    "scrips": {
+        "postinstall": "bower install"
+    }
 }
