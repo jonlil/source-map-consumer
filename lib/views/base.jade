@@ -1,0 +1,25 @@
+doctype
+html.no-js
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='styles/normalize.css')
+    link(rel='stylesheet', href='styles/main.css')
+    link(rel="stylesheet", type="text/css", href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic")
+    //-script(src='javascripts/vendor/modernizr-2.7.1.min.js')
+  body(ng-app="ganSourceMapConsumer")
+    <!--[if lt IE 8]>
+    p.browsehappy
+      | You are using an <strong>outdated</strong> browser.
+      | Please <a href="http://browsehappy.com/">upgrade your browser</a>
+      | to improve your experience.
+    <![endif]-->
+
+    div.container
+        block body
+
+    script(src="js/angular.js")
+    script(src="js/app.js")

@@ -1,0 +1,22 @@
+extends base
+
+block body
+    h1 hello
+
+    div(ng-controller="LookupController")
+        form(ng-submit="submit()")
+            div.form-group
+                label sourcemap url
+                input(ng-model="query.sourcemap", type="text").form-control
+                    
+            div.form-group
+                label row
+                input(ng-model="query.row", type="text").form-control
+                    
+            div.form-group
+                label column 
+                input(ng-model="query.column", type="text").form-control
+
+            button(type="submit") Query
+
+        pre(ng-show="results") {{ results | json }}
